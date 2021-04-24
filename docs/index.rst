@@ -6,9 +6,9 @@
 FarmSignal's Documentation
 ==========================
 
-.. image:: images/farmsignal-icon.svg
+.. image:: images/farmsignal-logo.png
    :width: 300
-   :alt: Plant inside of a pot farmsignal icon.
+   :alt: FarmSignal logo.
 
 FarmSignal is an open-source, easy-to-use automated plant watering solution.
 
