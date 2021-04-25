@@ -8,3 +8,7 @@ An open-source, easy-to-use automated plant watering solution.
 ## To compile documentation
 1. cd `docs/`
 2. `make html`
+ ## To view compiled HTML changes
+ If on vscode you can download [this](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
+ 1. Go to `docs/_build/html/index.html`
+ 2. Open the page on your browser or open the page using live server
