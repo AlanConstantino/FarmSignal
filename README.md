@@ -4,3 +4,7 @@
 [![Documentation Status](https://readthedocs.org/projects/farmsignal/badge/?version=latest)](http://docs.farmsignal.net/en/latest/?badge=latest)
 
 An open-source, easy-to-use automated plant watering solution.
+
+## To compile documentation
+1. cd `docs/`
+2. `make html`
