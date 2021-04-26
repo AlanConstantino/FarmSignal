@@ -1,0 +1,1845 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>WebAPI documentation &mdash; FarmSignal 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FarmSignal
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/prerequisites.html">Prerequisites</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assembly</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="assembly/hardware.html">Hardware Assembly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assembly/software.html">Software Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">License Agreement</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="license.html">GNU General Public License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FarmSignal</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>WebAPI documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/webapi.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="webapi-documentation">
+<h1>WebAPI documentation<a class="headerlink" href="#webapi-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="apis">
+<h2>APIs<a class="headerlink" href="#apis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="api-login">
+<h3>/api/login<a class="headerlink" href="#api-login" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="post">
+<h4>POST<a class="headerlink" href="#post" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>username</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>password</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 24%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td><p>JSON UserID, token</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-register">
+<h3>/api/register<a class="headerlink" href="#api-register" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h4>POST<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>email</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>username</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>password</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 24%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td><p>JSON UserID, token</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-passwordreset">
+<h3>/api/passwordreset<a class="headerlink" href="#api-passwordreset" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h4>POST<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>username</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 21%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td><p>Sends password reset email</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-resetpassword-id-token">
+<h3>/api/resetpassword/:id/:token<a class="headerlink" href="#api-resetpassword-id-token" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h4>POST<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>id</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>token</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 24%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-resetpassword">
+<h3>/api/resetpassword/<a class="headerlink" href="#api-resetpassword" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h4>POST<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>id</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>token</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>password</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 24%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>301</p></td>
+<td><p>success</p></td>
+<td><p>Redirects to login</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-sendnotification">
+<h3>/api/sendnotification/<a class="headerlink" href="#api-sendnotification" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h4>POST<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>plant_id</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>text</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td><p>Sent notification email with text</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-users">
+<h3>/api/users/<a class="headerlink" href="#api-users" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="get">
+<h4>GET<a class="headerlink" href="#get" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td><p>JSON of all users</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-users-user">
+<h3>/api/users/:user<a class="headerlink" href="#api-users-user" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h4>GET<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td><p>JSON of the user</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="put">
+<h4>PUT<a class="headerlink" href="#put" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>username</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>email</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>password</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="delete">
+<h4>DELETE<a class="headerlink" href="#delete" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-users-user-plants">
+<h3>/api/users/:user/plants<a class="headerlink" href="#api-users-user-plants" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h4>GET<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td><p>JSON of the user’s plants</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id8">
+<h4>POST<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 18%" />
+<col style="width: 14%" />
+<col style="width: 20%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>plantname</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>species</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>notification</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>bool</p></td>
+</tr>
+<tr class="row-even"><td><p>water_min</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>water_max</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td><p>JSON with plantId</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-users-user-plants-plant">
+<h3>/api/users/:user/plants/:plant<a class="headerlink" href="#api-users-user-plants-plant" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h4>GET<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>plant</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>Plant ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td><p>JSON of the plant</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id10">
+<h4>PUT<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 18%" />
+<col style="width: 14%" />
+<col style="width: 20%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>plant</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>Plant ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>plantname</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-odd"><td><p>species</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+<tr class="row-even"><td><p>notification</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>bool</p></td>
+</tr>
+<tr class="row-odd"><td><p>water_min</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>water_max</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id11">
+<h4>DELETE<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>plant</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>Plant ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-users-user-plants-plant-readings">
+<h3>/api/users/:user/plants/:plant/readings<a class="headerlink" href="#api-users-user-plants-plant-readings" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id12">
+<h4>GET<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>plant</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>Plant ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td><p>JSON of the user’s plant data</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id13">
+<h4>POST<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 16%" />
+<col style="width: 13%" />
+<col style="width: 18%" />
+<col style="width: 11%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>plant</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>Plant ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>moisture_percent</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>temperature_data</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>humidity_data</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>raw_soil_capacitance</p></td>
+<td><p>body</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>last_watered</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>DATE</p></td>
+</tr>
+<tr class="row-odd"><td><p>last_calibrated</p></td>
+<td><p>body</p></td>
+<td><p>optional</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>DATE</p></td>
+</tr>
+<tr class="row-even"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id14">
+<h4>DELETE<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>plant</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>Plant ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>200</p></td>
+<td><p>success</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="api-users-user-plants-plant-upload">
+<h3>/api/users/:user/plants/:plant/upload<a class="headerlink" href="#api-users-user-plants-plant-upload" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h4>GET<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>plant</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>Plant ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>None</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>index.hbs</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id16">
+<h4>PUT<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
+<p>Parameters</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 18%" />
+<col style="width: 14%" />
+<col style="width: 20%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Located in</p></th>
+<th class="head"><p>Required</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Schema</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>user</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>User ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-odd"><td><p>plant</p></td>
+<td><p>path</p></td>
+<td><p>yes</p></td>
+<td><p>Plant ID</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>int</p></td>
+</tr>
+<tr class="row-even"><td><p>sampleFile</p></td>
+<td><p>files</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>file</p></td>
+</tr>
+<tr class="row-odd"><td><p>authJWT</p></td>
+<td><p>header</p></td>
+<td><p>yes</p></td>
+<td></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>string</p></td>
+</tr>
+</tbody>
+</table>
+<p>Response</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 19%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Status Code</p></th>
+<th class="head"><p>Reason</p></th>
+<th class="head"><p>Response Model</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>301</p></td>
+<td><p>success</p></td>
+<td><p>Redirect to the GET path</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alan Constantino.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
