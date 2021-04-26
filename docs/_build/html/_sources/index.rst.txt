@@ -35,6 +35,7 @@ FarmSignal is an open-source, easy-to-use automated plant watering solution.
    :caption: API
 
    back-end/webapi.rst
+   front-end/react.rst
 
 .. toctree::
    :maxdepth: 1
