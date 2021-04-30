@@ -21,3 +21,10 @@ An open-source, easy-to-use automated plant watering solution.
  If on vscode you can download [this](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
  1. Go to `docs/_build/html/index.html`
  2. Open the page on your browser or open the page using live server
+
+## Images
+<img src="images/farmsignal-landing.png" width="600px" height="auto" />
+<img src="images/farmsignal-graphs.png" width="600px" height="auto" />
+<img src="images/project-diagram.png" width="600px" height="auto" />
+<img src="images/closed-hardware.jpeg" width="600px" height="auto" />
+<img src="images/hardware-exposed.jpeg" width="600px" height="auto" />
