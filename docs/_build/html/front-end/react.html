@@ -97,7 +97,34 @@
 <p class="caption"><span class="caption-text">API</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../back-end/webapi.html">WebAPI documentation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">React Components</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">React Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#title">Title</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#header-1">Header 1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#header-1-1">Header 1.1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#component-name-or-page">Component Name or Page</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#entry-point-of-application">Entry point of application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#components">Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#css">CSS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#addplant-css">AddPlant.css</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#pages">Pages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#js">404.js</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tabs">Tabs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#chartstab-js">ChartsTab.js</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#auth-js">Auth.js</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">License Agreement</span></p>
 <ul>
@@ -171,7 +198,87 @@
             
   <div class="section" id="react-components">
 <h1>React Components<a class="headerlink" href="#react-components" title="Permalink to this headline">¶</a></h1>
-<p>Here we will list all the React components.</p>
+<p>Directory Structure:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>├── FarmSignal
+   ├── back-end
+   ├── front-end
+        ├── build
+        ├── node_modules
+        ├── package.json
+        ├── package-lock.json
+        ├── public
+        ├── README.md
+        └── src
+   ├── images
+   ├── pi
+   └── README.md
+</pre></div>
+</div>
+<p>In the <code class="docutils literal notranslate"><span class="pre">front-end/src</span></code> folder is where you’ll find all the pages for the front-end that are currently served up in <a class="reference external" href="https://farmsignal.net">FarmSignal</a>.</p>
+<div class="section" id="title">
+<h2>Title<a class="headerlink" href="#title" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="header-1">
+<h3>Header 1<a class="headerlink" href="#header-1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="header-1-1">
+<h4>Header 1.1<a class="headerlink" href="#header-1-1" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="header-1-1-1">
+<h5>Header 1.1.1<a class="headerlink" href="#header-1-1-1" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="header-1-1-1-1">
+<h6>Header 1.1.1.1<a class="headerlink" href="#header-1-1-1-1" title="Permalink to this headline">¶</a></h6>
+<p><code class="docutils literal notranslate"><span class="pre">path/to/item</span></code></p>
+<p>Description.</p>
+</div>
+</div>
+</div>
+<div class="section" id="component-name-or-page">
+<h4>Component Name or Page<a class="headerlink" href="#component-name-or-page" title="Permalink to this headline">¶</a></h4>
+<p>This component does stuff.</p>
+</div>
+</div>
+</div>
+<div class="section" id="entry-point-of-application">
+<h2>Entry point of application<a class="headerlink" href="#entry-point-of-application" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/app.js</span></code></p>
+<p>Start point of the application.</p>
+</div>
+<div class="section" id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components</span></code></p>
+<p>The main folder in which components are stored.</p>
+<div class="section" id="css">
+<h3>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/css</span></code></p>
+<div class="section" id="addplant-css">
+<h4>AddPlant.css<a class="headerlink" href="#addplant-css" title="Permalink to this headline">¶</a></h4>
+<p>This file does stuff.</p>
+</div>
+</div>
+<div class="section" id="pages">
+<h3>Pages<a class="headerlink" href="#pages" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages</span></code></p>
+<p>The main folder in which the pages are stored.</p>
+<div class="section" id="js">
+<h4>404.js<a class="headerlink" href="#js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/404.js</span></code></p>
+<p>The 404 page.</p>
+</div>
+</div>
+<div class="section" id="tabs">
+<h3>Tabs<a class="headerlink" href="#tabs" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Tabs</span></code></p>
+<p>This folder contains stuff.</p>
+<div class="section" id="chartstab-js">
+<h4>ChartsTab.js<a class="headerlink" href="#chartstab-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Tabs/ChartsTab.js</span></code></p>
+<p>This is where all the charts are.</p>
+</div>
+</div>
+<div class="section" id="auth-js">
+<h3>Auth.js<a class="headerlink" href="#auth-js" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Auth.js</span></code></p>
+<p>This file takes care of user authentication.</p>
+</div>
+</div>
 </div>
 
 
