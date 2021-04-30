@@ -7,6 +7,13 @@
 
 An open-source, easy-to-use automated plant watering solution.
 
+## How to contribute to docs
+1. Make sure to follow the steps [here](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html) to install Sphinx.
+2. Make a new `.rst` file withing the `/docs` folder and place it anywhere other the the folder starting with an underscore `_`
+3. Once you finish your `.rst` file, compile it by running `make html` in the `/docs` folder.
+4. Open up the `.html` page that was just create with your browser in the `docs/_build/html` folder to view your changes
+5. Make a pull request so I can go over your changes
+
 ## To compile documentation
 1. cd `docs/`
 2. `make html`
