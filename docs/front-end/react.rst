@@ -247,4 +247,37 @@ Auth.js
 =======
 ``FarmSignal/front-end/src/components/Auth.js``
 
-This file takes care of user authentication.
+A class that takes care of user authentication through the use of JWTs (JSON web tokens).
+
+Logout.js
+=========
+``FarmSignal/front-end/src/components/Logout.js``
+
+Takes care of the Logout functionality by calling the ``auth.logout()`` function from the ``Auth.js`` class and redirecting the user to the login page.
+
+Navbar.js
+=========
+``FarmSignal/front-end/src/components/Navbar.js``
+
+Contains and defines the navigation bar component.
+
+Plant.js
+========
+``FarmSignal/front-end/src/components/Plant.js``
+
+Defines the look of each plant card that gets displayed in the ``pages/Home.js`` page. Sends a fetch request to the server to get all the plants from the
+user's account and then displays them all.
+
+ProtectedRoute.js
+=================
+``FarmSignal/front-end/src/components/ProtectedRoute.js``
+
+A helper component that protects url routes. This component checks to see if the user is authenticated by calling the ``auth.isAuthenticated()`` function from
+the ``Auth.js`` class. If the user is authenticated, the user will then be able to view the url they are accessing (as long as it's a valid url), if not, they'll
+be redirected back to the ``pages/Landing.js`` page.
+
+TabPanel.js
+===========
+``FarmSignal/front-end/src/components/TabPanel.js``
+
+A helper component that takes care of switching from tab to tab inside of the ``pages/PlantInfo.js`` page.

@@ -80,10 +80,28 @@ CSS
 
 ``FarmSignal/front-end/src/components/css``
 
+The ``css`` folder contains some css components that are used throughout the application.
+
 AddPlant.css
 ------------
 
-This file does stuff.
+``FarmSignal/front-end/src/components/css/AddPlant.css``
+
+Defines media queries for a responsive container in the Add Plant page of the application.
+
+Button.css
+------------
+
+``FarmSignal/front-end/src/components/css/Button.css``
+
+This file defines a button class with with a ``:hover`` css property.
+
+Plant.css
+------------
+
+``FarmSignal/front-end/src/components/css/Button.css``
+
+Defines a container that is used for the plant card on the home screen of the application and also defines media queries for the container to be responsive.
 
 Pages
 =====
@@ -97,7 +115,7 @@ The main folder in which the pages are stored.
 
 ``FarmSignal/front-end/src/components/pages/404.js``
 
-The 404 page.
+The 404 page. This page gets displayed whenever the user tries to access a non-existant page or url.
 
 AddPlant.js
 -----------
@@ -196,16 +214,70 @@ Tabs
 
 ``FarmSignal/front-end/src/components/Tabs``
 
-This folder contains stuff.
+The following tabs are all part of the ``PlantInfo.js`` page where each tab encompases its own functionality.
 
 ChartsTab.js
 ------------
 ``FarmSignal/front-end/src/components/Tabs/ChartsTab.js``
 
-This is where all the charts are.
+This tab is where all the charts that get displayed to the user are. These charts include the soil moisture percent, the humidity graph,
+and the temperature graph. Furthmore, this page also contains the "filter" functionality which allows the user to filter their graphs by
+displaying all readings or only showing the five most recent readings.
+
+DataTab.js
+----------
+``FarmSignal/front-end/src/components/Tabs/DataTab.js``
+
+This tab displays all the plant data in text format.
+
+ImageTab.js
+-----------
+``FarmSignal/front-end/src/components/Tabs/ImageTab.js``
+
+This tab encomapses all the logic to display and upload an image for a certain plant.
+
+Settings.js
+-----------
+``FarmSignal/front-end/src/components/Tabs/Settings.js``
+
+This tab is where the user is able to change settings about their plant such as toggling email notifications, changing the name and species
+of their plant, or deleting their plant.
 
 Auth.js
 =======
 ``FarmSignal/front-end/src/components/Auth.js``
 
-This file takes care of user authentication.
+A class that takes care of user authentication through the use of JWTs (JSON web tokens).
+
+Logout.js
+=========
+``FarmSignal/front-end/src/components/Logout.js``
+
+Takes care of the Logout functionality by calling the ``auth.logout()`` function from the ``Auth.js`` class and redirecting the user to the login page.
+
+Navbar.js
+=========
+``FarmSignal/front-end/src/components/Navbar.js``
+
+Contains and defines the navigation bar component.
+
+Plant.js
+========
+``FarmSignal/front-end/src/components/Plant.js``
+
+Defines the look of each plant card that gets displayed in the ``pages/Home.js`` page. Sends a fetch request to the server to get all the plants from the
+user's account and then displays them all.
+
+ProtectedRoute.js
+=================
+``FarmSignal/front-end/src/components/ProtectedRoute.js``
+
+A helper component that protects url routes. This component checks to see if the user is authenticated by calling the ``auth.isAuthenticated()`` function from
+the ``Auth.js`` class. If the user is authenticated, the user will then be able to view the url they are accessing (as long as it's a valid url), if not, they'll
+be redirected back to the ``pages/Landing.js`` page.
+
+TabPanel.js
+===========
+``FarmSignal/front-end/src/components/TabPanel.js``
+
+A helper component that takes care of switching from tab to tab inside of the ``pages/PlantInfo.js`` page.
