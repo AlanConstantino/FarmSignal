@@ -80,10 +80,28 @@ CSS
 
 ``FarmSignal/front-end/src/components/css``
 
+The ``css`` folder contains some css components that are used throughout the application.
+
 AddPlant.css
 ------------
 
-This file does stuff.
+``FarmSignal/front-end/src/components/css/AddPlant.css``
+
+Defines media queries for a responsive container in the Add Plant page of the application.
+
+Button.css
+------------
+
+``FarmSignal/front-end/src/components/css/Button.css``
+
+This file defines a button class with with a ``:hover`` css property.
+
+Plant.css
+------------
+
+``FarmSignal/front-end/src/components/css/Button.css``
+
+Defines a container that is used for the plant card on the home screen of the application and also defines media queries for the container to be responsive.
 
 Pages
 =====
