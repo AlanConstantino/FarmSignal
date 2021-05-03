@@ -154,6 +154,43 @@ The password recovery page is where a user can recover a lost password. After en
 the email recovery link button the user is taken to the sent password recovery page and an email is sent to the user's 
 provided email address. The email contains a link that takes the user to the reset password page.
 
+PlantInfo.js
+------------
+
+``FarmSignal/front-end/src/components/pages/PlantInfo.js``
+
+The plant info page displays the data for a specific plant through a series of four tabs. These tabs are image, charts, data, and settings.
+
+ResetPassword.js
+----------------
+
+``FarmSignal/front-end/src/components/pages/ResetPassword.js``
+
+The reset password page allows the user to enter and confirm a new password. The password must contain at least 1 number, 1 captial letter,
+1 special character, and be at least 8 characters long.
+
+SentPasswordRecovery.js
+-----------------------
+
+``FarmSignal/front-end/src/components/pages/SentPasswordRecovery.js``
+
+The sent password recovery page displays a message to the user alerting them to check their email for a link where they can reset their password.
+
+Settings.js
+-----------
+
+``FarmSignal/front-end/src/components/pages/Settings.js``
+
+The settings page allows the user to update their email address, username, and password.
+
+Signup.js
+---------
+
+``FarmSignal/front-end/src/components/pages/Signup.js``
+
+The sign up page allows a new user to register. The requirements to register are an email address, a unique username, and a password 
+that must contain at least 1 number, 1 captial letter, 1 special character, and be at least 8 characters long.
+
 Tabs
 ====
 
