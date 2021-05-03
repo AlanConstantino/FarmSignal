@@ -115,7 +115,7 @@ The main folder in which the pages are stored.
 
 ``FarmSignal/front-end/src/components/pages/404.js``
 
-The 404 page.
+The 404 page. This page gets displayed whenever the user tries to access a non-existant page or url.
 
 AddPlant.js
 -----------
