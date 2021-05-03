@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'FarmSignal'
-copyright = '2021, Alan Constantino'
-author = 'Alan Constantino'
+copyright = '2021, FarmSignal'
+author = 'Alan Constantino, Stanley Leem, Irmuun Zamilan'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0'
