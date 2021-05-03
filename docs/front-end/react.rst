@@ -214,13 +214,34 @@ Tabs
 
 ``FarmSignal/front-end/src/components/Tabs``
 
-This folder contains stuff.
+The following tabs are all part of the ``PlantInfo.js`` page where each tab encompases its own functionality.
 
 ChartsTab.js
 ------------
 ``FarmSignal/front-end/src/components/Tabs/ChartsTab.js``
 
-This is where all the charts are.
+This tab is where all the charts that get displayed to the user are. These charts include the soil moisture percent, the humidity graph,
+and the temperature graph. Furthmore, this page also contains the "filter" functionality which allows the user to filter their graphs by
+displaying all readings or only showing the five most recent readings.
+
+DataTab.js
+----------
+``FarmSignal/front-end/src/components/Tabs/DataTab.js``
+
+This tab displays all the plant data in text format.
+
+ImageTab.js
+-----------
+``FarmSignal/front-end/src/components/Tabs/ImageTab.js``
+
+This tab encomapses all the logic to display and upload an image for a certain plant.
+
+Settings.js
+-----------
+``FarmSignal/front-end/src/components/Tabs/Settings.js``
+
+This tab is where the user is able to change settings about their plant such as toggling email notifications, changing the name and species
+of their plant, or deleting their plant.
 
 Auth.js
 =======
