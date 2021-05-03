@@ -6,19 +6,49 @@ Directory Structure:
 
 .. code-block::
 
-  ├── FarmSignal
-     ├── back-end
-     ├── front-end
-          ├── build
-          ├── node_modules
-          ├── package.json
-          ├── package-lock.json
-          ├── public
-          ├── README.md
-          └── src
-     ├── images
-     ├── pi
-     └── README.md
+  FarmSignal
+  ├── back-end
+  ├── front-end
+  │   ├── build
+  │   ├── node_modules
+  │   ├── package.json
+  │   ├── package-lock.json
+  │   ├── public
+  │   ├── README.md
+  │   └── src
+  │       ├── Auth.js
+  │       ├── css
+  │       │   ├── AddPlant.css
+  │       │   ├── Button.css
+  │       │   └── Plant.css
+  │       ├── Logout.js
+  │       ├── Navbar.js
+  │       ├── pages
+  │       │   ├── 404.js
+  │       │   ├── AddPlant.js
+  │       │   ├── DeletePlant.js
+  │       │   ├── Home.js
+  │       │   ├── Landing.js
+  │       │   ├── Login.js
+  │       │   ├── PasswordRecovery.js
+  │       │   ├── PlantInfo.js
+  │       │   ├── ResetPassword.js
+  │       │   ├── SentPasswordRecovery.js
+  │       │   ├── Settings.js
+  │       │   ├── Signup.js
+  │       │   └── Tutorial.js
+  │       ├── Plant.js
+  │       ├── ProtectedRoute.js
+  │       ├── TabPanel.js
+  │       └── Tabs
+  │           ├── ChartsTab.js
+  │           ├── DataTab.js
+  │           ├── ImageTab.js
+  │           └── SettingsTab.js
+  ├── images
+  ├── pi
+  ├── LICENSE.txt
+  └── README.md
 
 In the ``front-end/src`` folder is where you'll find all the pages for the front-end that are currently served up in `FarmSignal <https://farmsignal.net>`_.
 
