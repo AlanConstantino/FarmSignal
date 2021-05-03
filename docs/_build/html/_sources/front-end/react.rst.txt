@@ -22,39 +22,10 @@ Directory Structure:
 
 In the ``front-end/src`` folder is where you'll find all the pages for the front-end that are currently served up in `FarmSignal <https://farmsignal.net>`_.
 
-=====
-Title
-=====
 
-Header 1
-========
-
-Header 1.1
-----------
-
-Header 1.1.1
-~~~~~~~~~~~~
-
-Header 1.1.1.1
-""""""""""""""
-
-``path/to/item``
-
-Description.
-
-Component Name or Page
-----------------------
-
-This component does stuff.
-
-
-
-
-
-
-==========================
-Entry point of application
-==========================
+======
+App.js
+======
 
 ``FarmSignal/front-end/src/app.js``
 
