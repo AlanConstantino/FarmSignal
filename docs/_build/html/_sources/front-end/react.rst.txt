@@ -6,24 +6,24 @@ Directory Structure:
 
 .. code-block::
 
-  FarmSignal
-  ├── back-end
-  ├── front-end
-  │   ├── build
-  │   ├── node_modules
+  FarmSignal/
+  ├── back-end/
+  ├── front-end/
+  │   ├── build/
+  │   ├── node_modules/
   │   ├── package.json
   │   ├── package-lock.json
-  │   ├── public
+  │   ├── public/
   │   ├── README.md
-  │   └── src
+  │   └── src/
   │       ├── Auth.js
-  │       ├── css
+  │       ├── css/
   │       │   ├── AddPlant.css
   │       │   ├── Button.css
   │       │   └── Plant.css
   │       ├── Logout.js
   │       ├── Navbar.js
-  │       ├── pages
+  │       ├── pages/
   │       │   ├── 404.js
   │       │   ├── AddPlant.js
   │       │   ├── DeletePlant.js
@@ -40,13 +40,13 @@ Directory Structure:
   │       ├── Plant.js
   │       ├── ProtectedRoute.js
   │       ├── TabPanel.js
-  │       └── Tabs
+  │       └── Tabs/
   │           ├── ChartsTab.js
   │           ├── DataTab.js
   │           ├── ImageTab.js
   │           └── SettingsTab.js
-  ├── images
-  ├── pi
+  ├── images/
+  ├── pi/
   ├── LICENSE.txt
   └── README.md
 
