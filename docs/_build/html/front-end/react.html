@@ -110,6 +110,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#components">Components</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#css">CSS</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#addplant-css">AddPlant.css</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#button-css">Button.css</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#plant-css">Plant.css</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#pages">Pages</a><ul>
@@ -129,9 +131,17 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#tabs">Tabs</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#chartstab-js">ChartsTab.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#datatab-js">DataTab.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#imagetab-js">ImageTab.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Settings.js</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#auth-js">Auth.js</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logout-js">Logout.js</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#navbar-js">Navbar.js</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plant-js">Plant.js</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#protectedroute-js">ProtectedRoute.js</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tabpanel-js">TabPanel.js</a></li>
 </ul>
 </li>
 </ul>
@@ -259,9 +269,21 @@
 <div class="section" id="css">
 <h3>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/css</span></code></p>
+<p>The <code class="docutils literal notranslate"><span class="pre">css</span></code> folder contains some css components that are used throughout the application.</p>
 <div class="section" id="addplant-css">
 <h4>AddPlant.css<a class="headerlink" href="#addplant-css" title="Permalink to this headline">¶</a></h4>
-<p>This file does stuff.</p>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/css/AddPlant.css</span></code></p>
+<p>Defines media queries for a responsive container in the Add Plant page of the application.</p>
+</div>
+<div class="section" id="button-css">
+<h4>Button.css<a class="headerlink" href="#button-css" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/css/Button.css</span></code></p>
+<p>This file defines a button class with with a <code class="docutils literal notranslate"><span class="pre">:hover</span></code> css property.</p>
+</div>
+<div class="section" id="plant-css">
+<h4>Plant.css<a class="headerlink" href="#plant-css" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/css/Button.css</span></code></p>
+<p>Defines a container that is used for the plant card on the home screen of the application and also defines media queries for the container to be responsive.</p>
 </div>
 </div>
 <div class="section" id="pages">
@@ -271,7 +293,7 @@
 <div class="section" id="js">
 <h4>404.js<a class="headerlink" href="#js" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/404.js</span></code></p>
-<p>The 404 page.</p>
+<p>The 404 page. This page gets displayed whenever the user tries to access a non-existant page or url.</p>
 </div>
 <div class="section" id="addplant-js">
 <h4>AddPlant.js<a class="headerlink" href="#addplant-js" title="Permalink to this headline">¶</a></h4>
@@ -347,17 +369,63 @@ that must contain at least 1 number, 1 captial letter, 1 special character, and 
 <div class="section" id="tabs">
 <h3>Tabs<a class="headerlink" href="#tabs" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Tabs</span></code></p>
-<p>This folder contains stuff.</p>
+<p>The following tabs are all part of the <code class="docutils literal notranslate"><span class="pre">PlantInfo.js</span></code> page where each tab encompases its own functionality.</p>
 <div class="section" id="chartstab-js">
 <h4>ChartsTab.js<a class="headerlink" href="#chartstab-js" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Tabs/ChartsTab.js</span></code></p>
-<p>This is where all the charts are.</p>
+<p>This tab is where all the charts that get displayed to the user are. These charts include the soil moisture percent, the humidity graph,
+and the temperature graph. Furthmore, this page also contains the “filter” functionality which allows the user to filter their graphs by
+displaying all readings or only showing the five most recent readings.</p>
+</div>
+<div class="section" id="datatab-js">
+<h4>DataTab.js<a class="headerlink" href="#datatab-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Tabs/DataTab.js</span></code></p>
+<p>This tab displays all the plant data in text format.</p>
+</div>
+<div class="section" id="imagetab-js">
+<h4>ImageTab.js<a class="headerlink" href="#imagetab-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Tabs/ImageTab.js</span></code></p>
+<p>This tab encomapses all the logic to display and upload an image for a certain plant.</p>
+</div>
+<div class="section" id="id2">
+<h4>Settings.js<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Tabs/Settings.js</span></code></p>
+<p>This tab is where the user is able to change settings about their plant such as toggling email notifications, changing the name and species
+of their plant, or deleting their plant.</p>
 </div>
 </div>
 <div class="section" id="auth-js">
 <h3>Auth.js<a class="headerlink" href="#auth-js" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Auth.js</span></code></p>
-<p>This file takes care of user authentication.</p>
+<p>A class that takes care of user authentication through the use of JWTs (JSON web tokens).</p>
+</div>
+<div class="section" id="logout-js">
+<h3>Logout.js<a class="headerlink" href="#logout-js" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Logout.js</span></code></p>
+<p>Takes care of the Logout functionality by calling the <code class="docutils literal notranslate"><span class="pre">auth.logout()</span></code> function from the <code class="docutils literal notranslate"><span class="pre">Auth.js</span></code> class and redirecting the user to the login page.</p>
+</div>
+<div class="section" id="navbar-js">
+<h3>Navbar.js<a class="headerlink" href="#navbar-js" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Navbar.js</span></code></p>
+<p>Contains and defines the navigation bar component.</p>
+</div>
+<div class="section" id="plant-js">
+<h3>Plant.js<a class="headerlink" href="#plant-js" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/Plant.js</span></code></p>
+<p>Defines the look of each plant card that gets displayed in the <code class="docutils literal notranslate"><span class="pre">pages/Home.js</span></code> page. Sends a fetch request to the server to get all the plants from the
+user’s account and then displays them all.</p>
+</div>
+<div class="section" id="protectedroute-js">
+<h3>ProtectedRoute.js<a class="headerlink" href="#protectedroute-js" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/ProtectedRoute.js</span></code></p>
+<p>A helper component that protects url routes. This component checks to see if the user is authenticated by calling the <code class="docutils literal notranslate"><span class="pre">auth.isAuthenticated()</span></code> function from
+the <code class="docutils literal notranslate"><span class="pre">Auth.js</span></code> class. If the user is authenticated, the user will then be able to view the url they are accessing (as long as it’s a valid url), if not, they’ll
+be redirected back to the <code class="docutils literal notranslate"><span class="pre">pages/Landing.js</span></code> page.</p>
+</div>
+<div class="section" id="tabpanel-js">
+<h3>TabPanel.js<a class="headerlink" href="#tabpanel-js" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/TabPanel.js</span></code></p>
+<p>A helper component that takes care of switching from tab to tab inside of the <code class="docutils literal notranslate"><span class="pre">pages/PlantInfo.js</span></code> page.</p>
 </div>
 </div>
 </div>
