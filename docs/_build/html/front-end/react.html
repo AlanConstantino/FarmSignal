@@ -114,6 +114,17 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#pages">Pages</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#js">404.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#addplant-js">AddPlant.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deleteplant-js">DeletePlant.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#home-js">Home.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#landing-js">Landing.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#login-js">Login.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#passwordrecovery-js">PasswordRecovery.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#plantinfo-js">PlantInfo.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resetpassword-js">ResetPassword.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sentpasswordrecovery-js">SentPasswordRecovery.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#settings-js">Settings.js</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#signup-js">Signup.js</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#tabs">Tabs</a><ul>
@@ -261,6 +272,76 @@
 <h4>404.js<a class="headerlink" href="#js" title="Permalink to this headline">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/404.js</span></code></p>
 <p>The 404 page.</p>
+</div>
+<div class="section" id="addplant-js">
+<h4>AddPlant.js<a class="headerlink" href="#addplant-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/AddPlant.js</span></code></p>
+<p>The add plant page is where the user can enter a plant name, plant species and upload an image. The page is displayed as
+a series of steps. In the first step, the use enters a plant’s name and species. In the second step the user is given the option
+to select an image through a file explorer or drag and drop a file into a boxed element. On the third page, the user is shown the
+image selected along with the chosen plant name and species. The user has the option to verify these inputs by pressing the
+confirm button to accept or the reset button. Upon pressing the reset button the user is taken back to the first step where they can
+re-enter their inputs.</p>
+</div>
+<div class="section" id="deleteplant-js">
+<h4>DeletePlant.js<a class="headerlink" href="#deleteplant-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/DeletePlant.js</span></code></p>
+<p>The delete plant page shows a list of plants the user has added.
+This page allows a user to delete a plant by pressing the trash can icon next to the corresponding plant.</p>
+</div>
+<div class="section" id="home-js">
+<h4>Home.js<a class="headerlink" href="#home-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/Home.js</span></code></p>
+<p>The home page displays the all of the user’s plants through an array of cards.
+Each card is a clickable element that displays the plant’s image and name.
+Once a plant card is clicked the user is taken to that plant’s plant info page.</p>
+</div>
+<div class="section" id="landing-js">
+<h4>Landing.js<a class="headerlink" href="#landing-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/Landing.js</span></code></p>
+<p>The landing page is the first page shown to the user upon navigating to <a class="reference external" href="https://farmsignal.net">FarmSignal</a>.
+Here the user can choose to either log in or sign up. The user is taken to the appropriate page based on the button pressed.</p>
+</div>
+<div class="section" id="login-js">
+<h4>Login.js<a class="headerlink" href="#login-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/Login.js</span></code></p>
+<p>The log in page is where the user can authenticate their identity by entering the username and password created during sign up.
+Upon valid credential entry, the user is taken to the home page.
+If the user’s password is not known they can use the forgot password link to navigate to the password recovery page.</p>
+</div>
+<div class="section" id="passwordrecovery-js">
+<h4>PasswordRecovery.js<a class="headerlink" href="#passwordrecovery-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/PasswordRecovery.js</span></code></p>
+<p>The password recovery page is where a user can recover a lost password. After entering a username and pressing
+the email recovery link button the user is taken to the sent password recovery page and an email is sent to the user’s
+provided email address. The email contains a link that takes the user to the reset password page.</p>
+</div>
+<div class="section" id="plantinfo-js">
+<h4>PlantInfo.js<a class="headerlink" href="#plantinfo-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/PlantInfo.js</span></code></p>
+<p>The plant info page displays the data for a specific plant through a series of four tabs. These tabs are image, charts, data, and settings.</p>
+</div>
+<div class="section" id="resetpassword-js">
+<h4>ResetPassword.js<a class="headerlink" href="#resetpassword-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/ResetPassword.js</span></code></p>
+<p>The reset password page allows the user to enter and confirm a new password. The password must contain at least 1 number, 1 captial letter,
+1 special character, and be at least 8 characters long.</p>
+</div>
+<div class="section" id="sentpasswordrecovery-js">
+<h4>SentPasswordRecovery.js<a class="headerlink" href="#sentpasswordrecovery-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/SentPasswordRecovery.js</span></code></p>
+<p>The sent password recovery page displays a message to the user alerting them to check their email for a link where they can reset their password.</p>
+</div>
+<div class="section" id="settings-js">
+<h4>Settings.js<a class="headerlink" href="#settings-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/Settings.js</span></code></p>
+<p>The settings page allows the user to update their email address, username, and password.</p>
+</div>
+<div class="section" id="signup-js">
+<h4>Signup.js<a class="headerlink" href="#signup-js" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">FarmSignal/front-end/src/components/pages/Signup.js</span></code></p>
+<p>The sign up page allows a new user to register. The requirements to register are an email address, a unique username, and a password
+that must contain at least 1 number, 1 captial letter, 1 special character, and be at least 8 characters long.</p>
 </div>
 </div>
 <div class="section" id="tabs">
