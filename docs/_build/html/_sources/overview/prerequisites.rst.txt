@@ -22,6 +22,7 @@ Hardware Needed
 - `Jumper wires <https://www.amazon.com/gp/product/B01EV70C78/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1>`_ ~ $7
 - `Grove Universal 4-pin buckled 50cm cable <https://shop.switchdoc.com/products/grove-universal-4-pin-buckled-50cm-cable?_pos=1&_sid=4a1f46a0f&_ss=r>`_ ~ $12
 - `Grove 4-pin female jumper to Grove 4 pin conversion cable <https://www.amazon.com/Cables-Grove-Female-Jumper-Grove-Conversion/dp/B01CNZ9EEC/ref=sr_1_1?dchild=1&qid=1620105941&sr=8-1&srs=9974867011>`_ ~ $11
+- `Silicone tubing 1/8 inches, 3/16 inches diameter <https://www.amazon.com/gp/product/B000FN1FCO/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1>`_ ~ $6.47
 
 **Optional:**
 
@@ -29,7 +30,7 @@ Hardware Needed
 
 **Total Cost**
 
-- Total cost without LCD: $169.97
-- Total cost with LCD: $181.97
+- Total cost without LCD: $176.44
+- Total cost with LCD: $188.44
 
 **Note**: *Due to the current* `semi-conductor shortage <https://www.theguardian.com/business/2021/mar/21/global-shortage-in-computer-chips-reaches-crisis-point>`_, *some parts may cost more than usual.*
