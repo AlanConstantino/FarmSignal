@@ -171,7 +171,139 @@
             
   <div class="section" id="hardware-assembly">
 <span id="hardware"></span><h1>Hardware Assembly<a class="headerlink" href="#hardware-assembly" title="Permalink to this headline">¶</a></h1>
-<p>Explain how to assemble the hardware.</p>
+<ol class="arabic simple">
+<li><p>Attach the Pi2Grover hat to the Raspberry Pi 4.</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Grab your DHT22 sensor and attach a grove 4-pin connector to it.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Attach the female end of the red wire from the grove 4-pin connector to the male end labeled “+” on the DTH22 sensor.</p></li>
+<li><p>Attach the female end of the white wire from the grove 4-pin connector to the male end labeled “out” on the DHT22 sensor.</p></li>
+<li><p>Attach the female end of the black wire from the grove 4-pin connector to the male end labeled “-” on the DHT22 sensor.</p></li>
+</ul>
+<p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Connect the capcitive soil moisture sensor to the grove analog-to-digital ADS1115 board.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Optional: Wrap electrical tape around the top of the capacitive soil moisture sensor to add protection to the exposed chips on the sensor.</p></li>
+<li><p>Attach the wires that came with your soil moisture sensor to the top of the soil moisture sensor.</p></li>
+<li><p>Grab some male to male jumper wires and attach them to the ends of the female connections on the soil sensor.</p></li>
+<li><p>Grab a grove 4-pin connector to jumper wires and connect that cable to the male ends of the male to male wires you just attached to the soil sensor.</p></li>
+</ul>
+<p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Attach the capacitive soil moisture sensor to header connector “A0” on the grove analog-to-digital ADS1115 board.</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>Connect a grove to grove connector to the “I2C” header on the analog-to-digital ADS1115 board to the “I2C” header on the Pi2Grover.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Connect the grove to grove connector to the “I2C” header on the analog-to-digital ADS1115 board.</p></li>
+<li><p>Connect the other end of the grove to grove connector to the “I2C” header on the Raspberry Pi.</p></li>
+</ul>
+<p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p>Attach the end of the DHT22 sensor’s grove connector the the header labeled “D12/13” on the Pi2Grover.</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p>Grab your DC power jack and attach male to male jumper wires to the end of the DC jack (you will need to screw in the wires into the jack, make sure to not tighten them too much).</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p>Attach an alligator clip to the end the negative (black) wire on the DC jack.</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p>Grab another alligator clip and another male to male jumper wire and connect them together.</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="10">
+<li><p>Now grab two female to female jumper wires and connect them to the Relay.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Grab one female to female jumper wire and connect it to the “JD_VCC” and “VCC” pins on the relay.</p></li>
+<li><p>Grab the other female to female jumper wire and connect it to the pins labeled “GND” and “IN1” on the relay.</p></li>
+</ul>
+<p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="11">
+<li><p>Now grab the alligator clip wire extension that is not connected to the DC jack and screw it into the relay module labeled “K1”</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="12">
+<li><p>Grab the other alligator clip that is connected to the DC jack and attach it beside the first alligator clip on the relay module labeled “K1”</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="13">
+<li><p>Now attach the female ends from the wires on the relay board to the pins on from the Pi2Grover attached to the Pi.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Attach the “GND” wire from the relay to physical pin 34 on the Pi and attach the “IN1” wire from the relay to physical pin 32 (GPIO 12) on the Pi2Grover.</p></li>
+<li><p>Attach the “VCC” wire from the relay into physical pin 1 on the Pi and attach the “JD_VCC” wire from the relay to physical pin 2 on the Pi2Grover.</p></li>
+</ul>
+<p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="14">
+<li><p>Attach your desired length of silicone tubing with zip ties to the ends of the water pump (do not overtighten the zip ties because that can restrict water flow).</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="15">
+<li><p>Attach the ends of the alligator clips connected to the relay to the prongs sticking out from the water pump. For this part, the orientation in which you attach the
+alligator clips to the water pump doesn’t matter, it only switches the way water flows in and out of the water pump.</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
+<p>Optional: Attach the LCD to the Raspberry Pi.</p>
+<ol class="arabic simple">
+<li><p>Grab a grove 4-pin connector to jumper wires and attach it to the back of your LCD screen.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Attach the black wire from the grove connector to the pin labeled “GND” on the back of the LCD.</p></li>
+<li><p>Attach the red wire from the grove connector to the pin labeled “VCC” on the back of the LCD.</p></li>
+<li><p>Attach the white wire from the grove connector to the pin labeled “SDA” on the back of the LCD.</p></li>
+<li><p>Attach the yellow wire from the grove connector to the pin labeled “SCL” on the back of the LCD.</p></li>
+</ul>
+<p>Insert image(s)</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Attach the end of the grove header from the LCD to the “I2C” header on Pi2Grover attached to the Raspberry Pi.</p></li>
+</ol>
+<blockquote>
+<div><p>Insert image(s)</p>
+</div></blockquote>
 </div>
 
 
