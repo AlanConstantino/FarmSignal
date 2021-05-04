@@ -66,7 +66,6 @@ Hardware Assembly
       :width: 400
       :alt: Pi2Grover attached to the Raspberry Pi.
 
-
 4. Attach the capacitive soil moisture sensor to the header connector "A0" on the grove analog-to-digital ADS1115 board.
 
   .. figure:: ../images/assembly/File_023.jpeg
@@ -136,7 +135,6 @@ Hardware Assembly
     .. figure:: ../images/assembly/File_049.jpeg
       :width: 400
       :alt: Pi2Grover attached to the Raspberry Pi.
-
 
   - Grab one female to female jumper wire and connect it to the "JD_VCC" and "VCC" pins on the relay.
 
