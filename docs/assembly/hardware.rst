@@ -4,6 +4,32 @@
 Hardware Assembly
 =================
 
+Things Needed
+-------------
+
+- `Raspberry Pi 4 <https://www.cytron.io/p-raspberry-pi-4-model-b-2gb>`_ ~ $43.50
+- `Pi2Grover Hat <https://shop.switchdoc.com/products/pi2grover-raspberry-pi-to-grove-connector-interface-board>`_ ~ $20
+- `MicroSD card <https://www.amazon.com/gp/product/B06XWMQ81P/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&th=1>`_ ~ $10.30
+- `DHT22 (temperature and humidity) sensor <https://www.banggood.com/DHT22-Single-bus-Digital-Temperature-and-Humidity-Sensor-Module-Electronic-Building-Blocks-AM2302-3_3V-5V-DC-p-1457358.html?cur_warehouse=CN&rmmds=search>`_ ~ $6.47
+- `Capacitive soil moisture sensor <https://www.banggood.com/Capacitive-Soil-Moisture-Sensor-Not-Easy-To-Corrode-Wide-Voltage-Monitor-Module-p-1309033.html?cur_warehouse=CN&p=TS070424652668201809>`_ ~ $5.39
+- `Grove - 4 Channel 16 Bit Analog to Digital Converter <https://shop.switchdoc.com/collections/break-out-boards/products/grove-4-channel-16-bit-analog-to-digital-converter>`_ ~ $17
+- `12v water pump <https://www.amazon.com/Gikfun-Peristaltic-Connector-Aquarium-Analytic/dp/B01IUVHB8E/ref=sr_1_3?dchild=1&keywords=Peristaltic+Liquid+Pump&qid=1619219943&sr=8-3>`_ ~ $13
+- `Relay <https://www.banggood.com/Geekcreit-5V-4-Channel-Relay-Module-For-PIC-ARM-DSP-AVR-MSP430-Geekcreit-for-Arduino-products-that-work-with-official-Arduino-boards-p-87987.html?cur_warehouse=CN&rmmds=search>`_ ~ $4.31
+- `DC Jack and wall plug <https://www.amazon.com/gp/product/B077PW5JC3/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1>`_ ~ $12
+- `Alligator clips <https://www.amazon.com/gp/product/B07CXTSX8R/ref=ppx_yo_dt_b_asin_title_o02_s01?ie=UTF8&psc=1>`_ ~ $8
+- `Jumper wires <https://www.amazon.com/gp/product/B01EV70C78/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1>`_ ~ $7
+- `Grove Universal 4-pin buckled 50cm cable <https://shop.switchdoc.com/products/grove-universal-4-pin-buckled-50cm-cable?_pos=1&_sid=4a1f46a0f&_ss=r>`_ ~ $12
+- `Grove 4-pin female jumper to Grove 4 pin conversion cable <https://www.amazon.com/Cables-Grove-Female-Jumper-Grove-Conversion/dp/B01CNZ9EEC/ref=sr_1_1?dchild=1&qid=1620105941&sr=8-1&srs=9974867011>`_ ~ $11
+- `Silicone tubing 1/8 inches, 3/16 inches diameter <https://www.amazon.com/gp/product/B000FN1FCO/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1>`_ ~ $6.47
+
+Optional
+--------
+
+`LCD screen <https://www.amazon.com/SunFounder-Serial-Module-Arduino-Mega2560/dp/B019K5X53O/ref=as_li_ss_tl?keywords=20x4+i2c+lcd&qid=1578774015&sr=8-3&th=1&linkCode=sl1&tag=makerguides-20&linkId=e5d7fe39960ed2425e5b9098b4b98a81&language=en_US>`_ ~ $12
+
+Assembly
+--------
+
 1. Attach the Pi2Grover hat to the Raspberry Pi 4.
 
   .. figure:: ../images/assembly/File_000.jpeg
