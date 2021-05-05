@@ -92,7 +92,11 @@
 <p class="caption"><span class="caption-text">Assembly</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="hardware.html">Hardware Assembly</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Software Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Software Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#things-needed">Things Needed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start">Start</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">API</span></p>
 <ul>
@@ -171,7 +175,113 @@
             
   <div class="section" id="software-installation">
 <span id="software"></span><h1>Software Installation<a class="headerlink" href="#software-installation" title="Permalink to this headline">¶</a></h1>
-<p>This is how you assemble the software.</p>
+<div class="section" id="things-needed">
+<h2>Things Needed<a class="headerlink" href="#things-needed" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>An account created on <a class="reference external" href="https://farmsignal.net/">FarmSignal</a> with a plant added.</p>
+<ul>
+<li><p>You will need to both create an account and add a plant to your account in order to get started.</p></li>
+</ul>
+</li>
+<li><p>Micro SD card (8gb minimum)</p>
+<ul>
+<li><p>Optional: Make sure the SD card has fast read and write speeds.</p></li>
+<li><p>If you’re unsure about what micro SD card to choose, you can read <a class="reference external" href="https://www.raspberrypi.org/documentation/installation/sd-cards.md">this</a>.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="start">
+<h2>Start<a class="headerlink" href="#start" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Create an account on <a class="reference external" href="https://farmsignal.net/">FarmSignal</a> and add a plant.</p></li>
+</ol>
+<blockquote>
+<div><div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/add-plant.png"><img alt="Navigation steps." src="../_images/add-plant.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Back up your data from the micro SD card you plan on using then reformat it.</p></li>
+<li><p>Flash the official Raspberry Pi OS onto the SD card.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>If you already have the Raspberry Pi OS installed on the micro SD card, you can skip to step 3.</p></li>
+<li><p>If you’re not sure about how to flash the Raspberry Pi OS onto the micro SD card, you can follow these steps <a class="reference external" href="https://www.raspberrypi.org/documentation/installation/installing-images/README.md">here</a>.</p></li>
+<li><p>Tip: We recommend using <a class="reference external" href="https://www.balena.io/etcher/">Balena Etcher</a> to flash the Raspberry Pi OS onto the micro SD card.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Once you’re logged in and at the Desktop, open the terminal and update the system using <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">update</span></code> and <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">upgrade</span></code></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Insert image(s)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>Once you finish updating and installing updates, navigate to the <strong>Raspberry Pi Logo</strong>, click it, then hover over <strong>Preferences</strong> and click on <strong>Raspberry Pi Configuration</strong></p></li>
+</ol>
+<blockquote>
+<div><div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/raspi-config.png"><img alt="Navigation steps." src="../_images/raspi-config.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p>Once the <strong>Raspberry Pi Configuration</strong> menu pops up, go ahead and enable “SSH”, “i2c”, and “Remote GPIO” and then click ok to confirm your changes.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Note: You may be required to restart once you confirm your changes, if prompted to do so go ahead and restart your Pi.</p></li>
+</ul>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/options-gui.png"><img alt="Navigation steps." src="../_images/options-gui.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p>Go to the <a class="reference external" href="https://github.com/AlanConstantino/FarmSignal/releases">FarmSignal GitHub</a> and under releases, download the latest release.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Insert image</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p>Unzip the file you just downloaded on your Desktop.</p></li>
+<li><p>Double-click the folder you just extracted to go inside of it and navigate to the Pi folder and go inside of it.</p></li>
+<li><p>Once you’re inside of the Pi folder, right click inside of it and bring up the terminal.</p></li>
+<li><p>Once you bring up your terminal, run the following command to install some Python depedencies needed for FarmSignal to function properly.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Run the command <code class="docutils literal notranslate"><span class="pre">pip3</span> <span class="pre">install</span> <span class="pre">adafruit-circuitpython-dht</span></code></p></li>
+<li><p>Run the command <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">libgpiod2</span></code></p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="12">
+<li><p>Now open the <code class="docutils literal notranslate"><span class="pre">FarmSignal/Pi</span></code> folder and give the file <code class="docutils literal notranslate"><span class="pre">calibration.py</span></code> executable permissions with the <code class="docutils literal notranslate"><span class="pre">chmod</span></code> command.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Open a new terminal window and navigate to the <code class="docutils literal notranslate"><span class="pre">FarmSignal/Pi</span></code> directory with the following command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~/Desktop/FarmSignal/Pi</span></code></p></li>
+<li><p>Give the <code class="docutils literal notranslate"><span class="pre">calibration.py</span></code> file executable permissions with the following command <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span> <span class="pre">calibration.py</span></code></p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="13">
+<li><p>Start the FarmSignal application by running the following command <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">app.py</span></code></p></li>
+<li><p>Follow the instructions as they appear on the terminal.</p></li>
+<li><p>Head over to the <a class="reference external" href="https://farmsignal.net">FarmSignal</a> web app and click on the plant you decided to connect the Raspberry Pi to and you should see some data appear.</p></li>
+</ol>
+<blockquote>
+<div><div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/data.png"><img alt="Navigation steps." src="../_images/data.png" style="width: 400px;" /></a>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="16">
+<li><p>Enjoy!</p></li>
+</ol>
+</div>
 </div>
 
 
