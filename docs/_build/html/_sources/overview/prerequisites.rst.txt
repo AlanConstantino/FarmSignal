@@ -7,6 +7,8 @@ Prerequisites
 Hardware Needed
 ---------------
 
+**Note**: *Due to the current* `semi-conductor shortage <https://www.theguardian.com/business/2021/mar/21/global-shortage-in-computer-chips-reaches-crisis-point>`_, *some parts may cost more than usual.*
+
 **Required:**
 
 - `Raspberry Pi 4 <https://www.cytron.io/p-raspberry-pi-4-model-b-2gb>`_ ~ $43.50
@@ -33,4 +35,7 @@ Hardware Needed
 - Total cost without LCD: $176.44
 - Total cost with LCD: $188.44
 
-**Note**: *Due to the current* `semi-conductor shortage <https://www.theguardian.com/business/2021/mar/21/global-shortage-in-computer-chips-reaches-crisis-point>`_, *some parts may cost more than usual.*
+Plants Supported
+----------------
+
+FarmSignal is meant to support small to medium sized house plants.
