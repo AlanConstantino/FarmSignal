@@ -12,6 +12,8 @@ APIs
 POST
 ####
 
+Description: Logs into account
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -35,6 +37,8 @@ Status Code Reason     Response Model
 
 POST
 ####
+
+Description: Creates an account
 
 Parameters
 
@@ -61,6 +65,8 @@ Status Code Reason     Response Model
 POST
 ####
 
+Description: Sends password reset email
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -83,6 +89,8 @@ Status Code Reason     Response Model
 
 POST
 ####
+
+Description: Verifies the password reset id and token
 
 Parameters
 
@@ -107,6 +115,8 @@ Status Code Reason     Response Model
 
 POST
 ####
+
+Description: Resets the password
 
 Parameters
 
@@ -133,6 +143,8 @@ Status Code Reason     Response Model
 POST
 ####
 
+Description: Sends notification email
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -158,6 +170,8 @@ Status Code Reason     Response Model
 GET
 ####
 
+Description: Gets all users as a JSON
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -181,6 +195,8 @@ Status Code Reason     Response Model
 GET
 ####
 
+Description: Gets JSON of a single user
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -200,6 +216,8 @@ Status Code Reason     Response Model
 
 PUT
 ####
+
+Description: Updates values of a user
 
 Parameters
 
@@ -223,6 +241,8 @@ Status Code Reason     Response Model
 
 DELETE
 ######
+
+Description: Deletes a user
 
 Parameters
 
@@ -248,6 +268,8 @@ Status Code Reason     Response Model
 GET
 ####
 
+Description: Gets all plant info of user as JSON
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -267,6 +289,8 @@ Status Code Reason     Response Model
 
 POST
 ####
+
+Description: Creates plant info of user
 
 Parameters
 
@@ -297,6 +321,8 @@ Status Code Reason     Response Model
 GET
 ####
 
+Description: Gets plant info of specific plant
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -317,6 +343,8 @@ Status Code Reason     Response Model
 
 PUT
 ####
+
+Description: Updates values of specific plant
 
 Parameters
 
@@ -344,6 +372,8 @@ Status Code Reason     Response Model
 DELETE
 ######
 
+Description: Deletes a specific plant
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -369,6 +399,8 @@ Status Code Reason     Response Model
 GET
 ####
 
+Description: Gets all plant data of a plant
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -389,6 +421,8 @@ Status Code Reason     Response Model
 
 POST
 ####
+
+Description: Creates plant data of plant
 
 Parameters
 
@@ -417,6 +451,8 @@ Status Code Reason     Response Model
 DELETE
 ######
 
+Description: Deletes plant data of plant
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -442,6 +478,8 @@ Status Code Reason     Response Model
 GET
 ####
 
+Description: Gets plant image
+
 Parameters
 
 ======== ========== ======== =========== ======= ======
@@ -462,6 +500,8 @@ None        -          index.hbs
 
 PUT
 ####
+
+Description: Adds plant image
 
 Parameters
 
