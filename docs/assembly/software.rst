@@ -60,6 +60,11 @@ Start
   - Insert image
 
 8. Unzip the file you just downloaded on your Desktop.
+
+  .. figure:: ../images/install/8.png
+    :width: 400
+    :alt: Navigation steps.
+
 9. Double-click the folder you just extracted to go inside of it and navigate to the Pi folder and go inside of it.
 
   .. figure:: ../images/install/9.png
