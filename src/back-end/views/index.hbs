@@ -1,0 +1,27 @@
+<form action="/api/users/38/plants/56/upload" method="POST" encType="multipart/form-data">
+  <h3>Upload Plant Photo</h3>
+  <input type="file" name="sampleFile" accept="image/*" />
+  <input type="submit" class="btn btn-primary">
+</form>
+
+<div class="card">
+  {{#each rows}}
+
+    {{#if this.plant_img}}
+      <img class="card__image" src= '/upload/{{this.plant_img}}' loading="lazy" alt="User Profile">
+     
+    {{else}}
+      <img class="card__image" src="/img/default.jpg" loading="lazy" alt="User Profile">
+    {{/if}}
+     
+    {{/each}}
+
+    
+    
+    <h1 class="card__title">Plant Type</h1>
+    <div class="card__job">Plant Species </div>
+    <p class="card__about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur vitae eaque facilis quaerat ut aliquam ullam ducimus pariatur maiores dignissimos porro inventore quis ipsam est praesentium deserunt nam, exercitationem itaque!</p>
+    <button type="button" class="btn btn-primary">View Profile</button>
+  
+
+</div>
