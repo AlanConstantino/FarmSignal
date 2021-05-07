@@ -33,7 +33,13 @@ Start
 
 4. Once you're logged in and at the Desktop, open the terminal and update the system using ``sudo apt-get update`` and ``sudo apt-get upgrade``
 
-  - Insert image(s)
+  .. figure:: ../images/install/4a.png
+    :width: 400
+    :alt: Navigation steps.
+
+  .. figure:: ../images/install/4b.png
+    :width: 400
+    :alt: Navigation steps.
 
 5. Once you finish updating and installing updates, navigate to the **Raspberry Pi Logo**, click it, then hover over **Preferences** and click on **Raspberry Pi Configuration**
 
@@ -54,20 +60,79 @@ Start
   - Insert image
 
 8. Unzip the file you just downloaded on your Desktop.
+
+  .. figure:: ../images/install/8.png
+    :width: 400
+    :alt: Navigation steps.
+
 9. Double-click the folder you just extracted to go inside of it and navigate to the Pi folder and go inside of it.
+
+  .. figure:: ../images/install/9.png
+    :width: 400
+    :alt: Navigation steps.
+
 10. Once you're inside of the Pi folder, right click inside of it and bring up the terminal.
+
+  .. figure:: ../images/install/10.png
+    :width: 400
+    :alt: Navigation steps.
+
 11. Once you bring up your terminal, run the following command to install some Python depedencies needed for FarmSignal to function properly.
 
   - Run the command ``pip3 install adafruit-circuitpython-dht``
+
+  .. figure:: ../images/install/11a.png
+    :width: 400
+    :alt: Navigation steps.
+
   - Run the command ``sudo apt-get install libgpiod2``
+
+  .. figure:: ../images/install/11b.png
+    :width: 400
+    :alt: Navigation steps.
 
 12. Now open the ``FarmSignal/Pi`` folder and give the file ``calibration.py`` executable permissions with the ``chmod`` command.
 
   - Open a new terminal window and navigate to the ``FarmSignal/Pi`` directory with the following command ``cd ~/Desktop/FarmSignal/Pi``
+
+  .. figure:: ../images/install/12a.png
+    :width: 400
+    :alt: Navigation steps.
+
   - Give the ``calibration.py`` file executable permissions with the following command ``chmod +x calibration.py``
 
+  .. figure:: ../images/install/12b.png
+    :width: 400
+    :alt: Navigation steps.
+
 13. Start the FarmSignal application by running the following command ``python3 app.py``
+
+  .. figure:: ../images/install/13.png
+    :width: 400
+    :alt: Navigation steps.
+
 14. Follow the instructions as they appear on the terminal.
+
+  .. figure:: ../images/install/14a.png
+    :width: 400
+    :alt: Navigation steps.
+
+  .. figure:: ../images/install/14b.png
+    :width: 400
+    :alt: Navigation steps.
+
+  .. figure:: ../images/install/14c.png
+    :width: 400
+    :alt: Navigation steps.
+
+  .. figure:: ../images/install/14d.png
+    :width: 400
+    :alt: Navigation steps.
+
+  .. figure:: ../images/install/14e.png
+    :width: 400
+    :alt: Navigation steps.
+
 15. Head over to the `FarmSignal <https://farmsignal.net>`__ web app and click on the plant you decided to connect the Raspberry Pi to and you should see some data appear.
 
   .. figure:: ../images/install/data.png
