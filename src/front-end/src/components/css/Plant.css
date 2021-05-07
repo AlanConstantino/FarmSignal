@@ -1,0 +1,24 @@
+
+.card-container{
+    width:20rem;
+}
+.MuiGrid-grid-xl-12 {
+    flex-basis: 0% !important;
+}
+@media only screen and (min-width:100px){
+    .MuiGrid-grid-xl-6 {
+        flex-basis: 34% !important;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .MuiGrid-grid-xl-12 {
+        flex-basis: 59% !important;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .card-container{
+        width: 15rem;
+    }
+}

@@ -1,0 +1,12 @@
+@media only screen and (max-width:320px){
+    .MuiStepper-root{
+        padding:0px !important;
+    }
+}
+
+@media only Screen and (max-width:280px){
+    .MuiContainer-root {
+        padding-left: 3px !important;
+        padding-right: 10px !important;
+    }
+}
