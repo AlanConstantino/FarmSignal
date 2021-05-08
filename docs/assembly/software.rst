@@ -57,6 +57,10 @@ Start
 
 7. Go to the `FarmSignal GitHub <https://github.com/AlanConstantino/FarmSignal/releases>`__ and under releases, download the latest release.
 
+.. figure:: ../images/install/7.png
+    :width: 400
+    :alt: Navigation steps.
+
 8. Unzip the file you just downloaded on your Desktop.
 
   .. figure:: ../images/install/8.png
