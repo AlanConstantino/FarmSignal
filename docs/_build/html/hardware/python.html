@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Python Hardware Code &mdash; FarmSignal 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MySQL Documentation" href="../back-end/mysql.html" />
+    <link rel="prev" title="React Components" href="../front-end/react.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> FarmSignal
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/prerequisites.html">Prerequisites</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assembly</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../assembly/hardware.html">Hardware Assembly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assembly/software.html">Software Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../back-end/webapi.html">WebAPI documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../front-end/react.html">React Components</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python Hardware Code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#app-py">app.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#calibration-py">calibration.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware">hardware</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dht22-py">dht22.py</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lcd-py">lcd.py</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#relay-py">relay.py</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sdl-adafruit-ads1x15">SDL_Adafruit_ADS1x15</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#soil-moisture-sensor-py">soil_moisture_sensor.py</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#test-py">test.py</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#util">util</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">DataBase</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../back-end/mysql.html">MySQL Documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">License Agreement</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">GNU General Public License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">FarmSignal</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Python Hardware Code</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/hardware/python.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-hardware-code">
+<span id="python"></span><h1>Python Hardware Code<a class="headerlink" href="#python-hardware-code" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>pi/
+├── app.py
+├── calibration.py
+├── hardware
+│   ├── dht22.py
+│   ├── lcd.py
+│   ├── relay.py
+│   ├── SDL_Adafruit_ADS1x15
+│   ├── soil_moisture_sensor.py
+├── requirements.txt
+├── test.py
+└── util
+</pre></div>
+</div>
+<div class="section" id="app-py">
+<h2>app.py<a class="headerlink" href="#app-py" title="Permalink to this headline">¶</a></h2>
+<p>The main start of the Python terminal application. This file runs the calibration sequence, calibrates the soil moisture sensor and grabs the current readings of the various sensors and then writes all this data to a JSON file named <code class="docutils literal notranslate"><span class="pre">data.json</span></code>.
+The <code class="docutils literal notranslate"><span class="pre">data.json</span></code> file is then sent to the back-end to be displayed to the user on the front-end.</p>
+</div>
+<div class="section" id="calibration-py">
+<h2>calibration.py<a class="headerlink" href="#calibration-py" title="Permalink to this headline">¶</a></h2>
+<p>This file runs the calibration sequence to determine the <code class="docutils literal notranslate"><span class="pre">wet</span></code>, <code class="docutils literal notranslate"><span class="pre">dry</span></code>, and <code class="docutils literal notranslate"><span class="pre">current</span></code> soil moisture readings. You must give this file executable permissions (<code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span></code>) in order to be used with <code class="docutils literal notranslate"><span class="pre">app.py</span></code>.
+To run this file as a standalone program, you must pass it in the plant id of the plant you’re currently trying to calibrate as a command line argument.</p>
+</div>
+<div class="section" id="hardware">
+<h2>hardware<a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<p>This folder contains various classes and libraries that interface with the hardware that is connected to the Raspberry Pi.</p>
+<div class="section" id="dht22-py">
+<h3>dht22.py<a class="headerlink" href="#dht22-py" title="Permalink to this headline">¶</a></h3>
+<p>A class that interfaces with the DHT22 sensor.</p>
+</div>
+<div class="section" id="lcd-py">
+<h3>lcd.py<a class="headerlink" href="#lcd-py" title="Permalink to this headline">¶</a></h3>
+<p>A class that interfaces with the LCD display.</p>
+</div>
+<div class="section" id="relay-py">
+<h3>relay.py<a class="headerlink" href="#relay-py" title="Permalink to this headline">¶</a></h3>
+<p>A class that interfaces with the Relay.</p>
+</div>
+<div class="section" id="sdl-adafruit-ads1x15">
+<h3>SDL_Adafruit_ADS1x15<a class="headerlink" href="#sdl-adafruit-ads1x15" title="Permalink to this headline">¶</a></h3>
+<p>A folder that contains the libraries to interface with the ADS1115 analog-to-digital converter.</p>
+</div>
+<div class="section" id="soil-moisture-sensor-py">
+<h3>soil_moisture_sensor.py<a class="headerlink" href="#soil-moisture-sensor-py" title="Permalink to this headline">¶</a></h3>
+<p>A wrapper class for the analog-to-digital board in <code class="docutils literal notranslate"><span class="pre">SDL_Adafruit_ADS1x15/SDL_Adafruit_ADS1x15.py</span></code> which interfaces with the soil moisture sensor.</p>
+</div>
+<div class="section" id="test-py">
+<h3>test.py<a class="headerlink" href="#test-py" title="Permalink to this headline">¶</a></h3>
+<p>A simple test file that reads from all four channels of the soil moisture sensor.</p>
+</div>
+<div class="section" id="util">
+<h3>util<a class="headerlink" href="#util" title="Permalink to this headline">¶</a></h3>
+<p>A folder that contains additional utility files to make reading and writing to files easier.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../back-end/mysql.html" class="btn btn-neutral float-right" title="MySQL Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../front-end/react.html" class="btn btn-neutral float-left" title="React Components" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, FarmSignal.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
